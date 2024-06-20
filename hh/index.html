@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Jones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* Reset dei margini e del padding per tutti gli elementi */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto; /* Font family per il testo */
+
+        }
+
+        /* Stili per il contenitore principale */
+        .container {
+            max-width: 1200px; /* Larghezza massima del contenitore */
+            margin: 0 auto; /* Centra il contenitore orizzontalmente */
+            padding: 0 20px; /* Spaziatura interna del contenitore */
+        }
+
+        /* Stili per l'intestazione superiore */
+        .top-header {
+            background: #0c1e3b;
+            color: #fff;
+            padding: 10px 0;
+            font-family: Arial, sans-serif; /* Font family per il testo */
+        }
+
+        .top-header a {
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        /* Stili per l'intestazione principale */
+        header {
+            background: #004080;
+            color: #fff;
+            padding: 20px 0;
+            font-family: Arial, sans-serif; /* Font family per il testo */
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2.5em; /* Dimensione del titolo */
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em; /* Dimensione del testo dei link */
+        }
+
+        /* Stili per la sezione hero */
+        .hero {
+            background: #f4f4f4;
+            padding: 40px 0;
+            text-align: center;
+            font-family: Arial, sans-serif; /* Font family per il testo */
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        /* Stili per il form di ricerca */
+        .search-container {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        #searchForm {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        #searchInput {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+        }
+
+        #searchButton {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px 16px;
+            border-radius: 0 4px 4px 0;
+            font-size: 16px;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+        }
+
+
+        .roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="container">
+            <a href="http://dev-gabriel-jones.pantheonsite.io/" class="region-link">Sito di proprietà di GJDEV</a>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1>Gabriel Jones</h1>
+            <nav>
+                <ul>
+                    <li><a href="/public/index.html">Home</a></li>
+                    <li><a href="/Curriculum/">Curriculum</a></li>
+                    <li><a href="/mys/">Crea il tuo sito</a></li>
+                    <li><a href="http://dev-gabriel-jones.pantheonsite.io/">Gabriel Jones</a></li>
+                    <li><a href="https://github.com/gjd-central/">GitHub</a></li>
+                    <li><a href="/documenti/">Documenti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Ciao</h2>
+        <p>ciao</p>
+    </div>
+    <script src="https://gjd-central.github.io/379246/script.js"></script>
+</body>
+</html>
